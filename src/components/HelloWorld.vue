@@ -2,7 +2,7 @@
   <v-container>
     <v-row class="text-center">
       <v-col cols="12">
-        <span class="tw-font-[35px]">Hello !</span>
+        <span class="tw-font-[35px]">Hello ! Intern</span>
       </v-col>
     </v-row>
   </v-container>
