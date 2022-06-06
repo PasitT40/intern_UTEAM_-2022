@@ -1,23 +1,29 @@
 <template>
   <v-app>
     <v-main>
-      <HelloWorld/>
+      <PortBeam />
+      <!-- <PortJunior /> -->
+      <!-- <PortFey /> -->
     </v-main>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import PortBeam from "./components/PortBeam.vue";
+import PortJunior from "./components/PortJunior.vue";
+import PortFey from "./components/PortFey.vue";
 
 export default {
-  name: 'App',
+  name: "App",
 
   components: {
-    HelloWorld,
+    PortBeam,
+    PortJunior,
+    PortFey,
   },
 
   data: () => ({
     //
   }),
-}
+};
 </script>
