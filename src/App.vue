@@ -1,8 +1,8 @@
 <template>
   <v-app>
     <v-main>
-      <PortBeam />
-      <!-- <PortJunior /> -->
+      <!-- <PortBeam />-->
+      <PortJunior />
       <!-- <PortFey /> -->
     </v-main>
   </v-app>
