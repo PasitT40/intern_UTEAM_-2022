@@ -1,28 +1,18 @@
 <template>
   <v-app>
     <v-main>
-      <!--<PortBeam />-->
-      <!-- <PortJunior /> -->
-      <!--<PortFey /> -->
-      <WebNior />
+      <Header></Header>
+      <router-view />
     </v-main>
   </v-app>
 </template>
 
 <script>
-import PortBeam from "./components/PortBeam.vue";
-import PortJunior from "./components/PortJunior.vue";
-import PortFey from "./components/PortFey.vue";
-import WebNior from "./components/WebNior.vue";
-
+import Header from "@/components/Header.vue";
 export default {
   name: "App",
-
   components: {
-    PortBeam,
-    PortJunior,
-    PortFey,
-    WebNior
+    Header,
   },
 
   data: () => ({
