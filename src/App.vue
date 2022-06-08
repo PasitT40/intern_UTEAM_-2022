@@ -4,7 +4,8 @@
       <!--<PortBeam />-->
       <!-- <PortJunior /> -->
       <!-- <PortFey /> -->
-      <PortExample />
+      <!-- <PortExample /> -->
+      <CloneWebBeam />
     </v-main>
   </v-app>
 </template>
@@ -14,6 +15,7 @@ import PortBeam from "./components/PortBeam.vue";
 import PortJunior from "./components/PortJunior.vue";
 import PortFey from "./components/PortFey.vue";
 import PortExample from "./components/PortExample.vue";
+import CloneWebBeam from "./components/CloneWebBeam.vue";
 
 export default {
   name: "App",
@@ -23,7 +25,8 @@ export default {
     PortJunior,
     PortFey,
     PortExample,
-  },
+    CloneWebBeam
+},
 
   data: () => ({
     //
