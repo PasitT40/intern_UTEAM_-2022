@@ -6,7 +6,7 @@
           <v-img
             :aspect-ratio="aspectRatio"
             :width="width"
-            src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"
+            src="http://f.ptcdn.info/077/018/000/1398147040-2013071311-o.jpg"
             cover
           >
           </v-img>
