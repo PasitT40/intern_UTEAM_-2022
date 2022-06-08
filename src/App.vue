@@ -2,9 +2,10 @@
   <v-app>
     <v-main>
       <!--<PortBeam />-->
-      <!-- <PortJunior /> -->
       <!-- <PortFey /> -->
-      <PortExample />
+      <!-- <PortJunior /> -->
+      <CloneFei/>
+      <!-- <PortExample /> -->
     </v-main>
   </v-app>
 </template>
@@ -14,6 +15,7 @@ import PortBeam from "./components/PortBeam.vue";
 import PortJunior from "./components/PortJunior.vue";
 import PortFey from "./components/PortFey.vue";
 import PortExample from "./components/PortExample.vue";
+import CloneFei from "./components/CloneFei.vue";
 
 export default {
   name: "App",
@@ -23,6 +25,7 @@ export default {
     PortJunior,
     PortFey,
     PortExample,
+    CloneFei,
   },
 
   data: () => ({
