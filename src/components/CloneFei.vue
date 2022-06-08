@@ -1,6 +1,6 @@
 
 <template>
-    <v-container class="tw-pa-5 tw-font-sans-serif ">
+    <v-container fluid class="tw-pa-5 tw-font-sans-serif ">
         <v-row class=" ">
             <!-- section1 -->
             <v-col class=" tw-bg-[url('src/assets/picH.jpg')] tw-text-white" cols="12">
