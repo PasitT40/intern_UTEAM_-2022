@@ -33,16 +33,19 @@
         <v-card class=" pa-2 " outlined tile >
           <p class=" tw-text-2xl  tw-underline tw-font-mono tw-text-red-400 "> Contact  </p>
           <br>
-          <p class=" tw-text-xl tw-font-mono "> Tel : xxx-xxxxxxx  <br> 
-          Email : chutikarn_12445@outlook.co.th <br> Line ID : ****** </p>
+          <p class=" tw-text-xl tw-font-mono "> 
+          Tel : xxx-xxxxxxx  <br> 
+          Email : chutikarn_12445@outlook.co.th <br> 
+          Line ID : ****** </p>
         </v-card>
       </v-col>
        <v-col cols="7">
         <v-card class="pa-2" outlined tile>
           <p class=" tw-text-2xl  tw-underline tw-font-mono tw-text-red-400"> Education  </p>
           <br>
-          <p class=" tw-text-xl tw-font-mono "> High School <br>2017 - 2019 | KP2
-          <br>  University  <br>2020 - now  | KMITL
+          <p class=" tw-text-xl tw-font-mono "> 
+            High School <br>2017 - 2019 | KP2 <br>  
+            University  <br>2020 - now  | KMITL
            </p> 
         </v-card>
       </v-col>

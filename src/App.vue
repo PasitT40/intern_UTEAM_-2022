@@ -3,7 +3,8 @@
     <v-main>
       <!--<PortBeam />-->
       <!-- <PortJunior /> -->
-       <PortFey /> 
+      <!--<PortFey /> -->
+      <WebNior />
     </v-main>
   </v-app>
 </template>
@@ -12,6 +13,7 @@
 import PortBeam from "./components/PortBeam.vue";
 import PortJunior from "./components/PortJunior.vue";
 import PortFey from "./components/PortFey.vue";
+import WebNior from "./components/WebNior.vue";
 
 export default {
   name: "App",
@@ -20,6 +22,7 @@ export default {
     PortBeam,
     PortJunior,
     PortFey,
+    WebNior
   },
 
   data: () => ({
