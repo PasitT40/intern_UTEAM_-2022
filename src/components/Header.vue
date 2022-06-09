@@ -20,10 +20,10 @@
             </router-link>
           </v-col>
           <v-col cols="1" class="d-flex justify-center align-center">
-            <router-link to="/about">about</router-link>
+            <router-link to="/about">About</router-link>
           </v-col>
           <v-col cols="2" class="d-flex justify-center align-center">
-            <router-link to="/product">ผลงานทั้งหมด</router-link>
+            <router-link to="/product">All Product</router-link>
           </v-col>
         </v-row>
       </v-col>
