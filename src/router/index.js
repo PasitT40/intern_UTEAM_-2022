@@ -5,6 +5,8 @@ import Home from '../views/Home.vue';
 // ..  = exit 1 step
 
 import about from '@/views/About.vue';
+import product from '@/views/product.vue';
+
 // root(src)/views/about
 
 const routes = [
@@ -18,6 +20,12 @@ const routes = [
     name: 'about',
     component: about,
   },
+  {
+    path: '/product',
+    name: 'product',
+    component: product,
+  },
+ 
 ];
 
 const router = createRouter({

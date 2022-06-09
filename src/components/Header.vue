@@ -22,6 +22,9 @@
           <v-col cols="1" class="d-flex justify-center align-center">
             <router-link to="/about">about</router-link>
           </v-col>
+          <v-col cols="2" class="d-flex justify-center align-center">
+            <router-link to="/product">ผลงานทั้งหมด</router-link>
+          </v-col>
         </v-row>
       </v-col>
     </v-row>
