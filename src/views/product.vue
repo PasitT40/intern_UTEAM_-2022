@@ -2,11 +2,11 @@
     <v-container class="pa-0 mb-5">
         <v-row no-gutters>
             <v-col cols="12">
-                <v-row no-gutters>
-                    <div>All Product</div>
+                <v-row no-gutters  >
+                    <v-col align="center" cols="12" class=" pa-5 tw-font-bold tw-text-transparent tw-text-4xl tw-uppercase tw-bg-clip-text tw-bg-gradient-to-r tw-from-purple-400 tw-to-pink-600" > All our works </v-col>
                 </v-row>
-                <v-row no-gutters>
-                    <ul class="tw-list-disc">
+                <v-row no-gutters >
+                    <ul class="tw-list-disc  tw-font-semibold tw-text-2xl tw-leading-10">
                         <router-link to="/PortBeam">
                             <li class="tw-no-underline tw-decoration-1 hover:tw-underline ">Port Beam</li>
                         </router-link>
