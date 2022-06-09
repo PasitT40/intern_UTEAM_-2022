@@ -14,6 +14,7 @@ import CloneFei from '@/components/CloneFei.vue';
 import CloneJN from '@/components/WebNior.vue';
 import TodolistExample from '@/views/TodolistExample.vue';
 import todolistJN from '@/views/todolistJN.vue';
+import todolistJN from '@/components/todolistJN.vue';
 
 // root(src)/views/about
 
