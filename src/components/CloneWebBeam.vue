@@ -1,6 +1,6 @@
 
 <template>
-  <v-container>
+  <v-container fluid>
     <v-row>
         <v-col class="tw-bg-neutral-200" cols="12">
             <v-row class="tw-text-sm" no-gutters>
