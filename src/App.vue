@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-main class="tw-bg-slate-900">
+    <v-main>
       <Header></Header>
       <router-view />
     </v-main>

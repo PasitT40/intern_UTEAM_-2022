@@ -106,7 +106,7 @@ const routes = [
   },
   {
     path: '/pokeae',
-    name: 'PokeAe',
+    name: 'pokeAe',
     component: pokeAe,
   },
 ];
