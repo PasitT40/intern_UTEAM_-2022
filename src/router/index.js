@@ -16,6 +16,9 @@ import TodolistExample from '@/views/TodolistExample.vue';
 import todolistJN from '@/views/todolistJN.vue';
 import TodolistBeam from '@/views/todolistbeam.vue';
 import todolistFei from '@/views/todolistFei.vue';
+import pokeBeam from '@/views/pokeBeam.vue';
+import pokeFei from '@/views/pokeFei.vue';
+import pokeJN from '@/views/pokeJN.vue';
 
 // root(src)/views/about
 
@@ -84,6 +87,21 @@ const routes = [
     path: '/todolistfei',
     name: 'todolistFei',
     component: todolistFei,
+  },
+  {
+    path: '/pokejn',
+    name: 'PokeJN',
+    component: pokeJN,
+  },
+  {
+    path: '/pokebeam',
+    name: 'PokeBeam',
+    component: pokeBeam,
+  },
+  {
+    path: '/pokefei',
+    name: 'PokeFei',
+    component: pokeFei,
   },
 ];
 
