@@ -1,38 +1,53 @@
 <template>
   <v-container fluid>
     <v-row no-gutters>
-      <v-col cols="12" class="d-flex justify-center">
-        <span class="tw-font-[800] tw-text-[35px]">To do list</span>
+
+      <v-col cols="12" class="d-flex justify-center ">
+        <span class="tw-font-[800] tw-text-[50px] tw-text-white">TO DO LIST</span>
       </v-col>
+
+       <v-col cols="12" class="d-flex justify-center">
+        <span class="tw-font-[500] tw-text-[25px] tw-text-white">Create a list of tasks :</span>
+      </v-col>
+
       <v-row no-gutters justify="center">
-        <v-col cols="6">
+        <v-col cols="4" class="tw-text-slate-200 ">
           <v-text-field
             v-model="text"
-            label="add a new task"
+            color ="success"
+            label="Add a new task"
             variant="underlined"
           ></v-text-field>
         </v-col>
         <v-col cols="1">
-          <v-btn @click="onSubmit">
-            <span>ADD</span>
+          <v-btn color="green" @click="onSubmit">
+            <span class="tw-font-[700] tw-text-[20px]">ADD</span>
           </v-btn>
         </v-col>
       </v-row>
-      <v-col v-for="each in arrayText" cols="12" class="pa-5">
+      
+    </v-row>
+    <v-row no-gutters justify="center">
+      <v-col v-for="each in arrayText" cols="7" class="pa-5 ma-2 tw-rounded-lg tw-bg-slate-700"  >
         <v-row no-gutters>
-          <v-col cols="5">
+          <v-col cols="4">
             <span
-              class="d-flex justify-center"
-              :class="{ 'tw-text-[red]': isActive }"
+              class="d-flex justify-center tw-text-white"
+              :class="{ 'tw-line-through': isActive }"
             >
               {{ each }}</span
             >
           </v-col>
-          <v-col cols="1">
-            <v-btn color="green" @click="onDone">Done</v-btn>
+          <v-col cols="2">
+            <v-btn color="green" @click="onDone">
+                <span class="tw-font-[700] tw-text-[20px]">DONE</span>
+            </v-btn>
           </v-col>
-          <v-col cols="1">
-            <v-btn @click="onDelete(each)" color="red">Delete</v-btn>
+
+          <v-col cols="2">
+            <v-btn @click="onDelete(each)" color="red">
+                <span class="tw-font-[700] tw-text-[20px]">DELETE</span>
+            </v-btn>
           </v-col>
         </v-row>
       </v-col>
