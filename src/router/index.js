@@ -19,6 +19,7 @@ import todolistFei from '@/views/todolistFei.vue';
 import pokeBeam from '@/views/pokeBeam.vue';
 import pokeFei from '@/views/pokeFei.vue';
 import pokeJN from '@/views/pokeJN.vue';
+import pokeAe from '@/views/pokeAe.vue';
 
 // root(src)/views/about
 
@@ -102,6 +103,11 @@ const routes = [
     path: '/pokefei',
     name: 'PokeFei',
     component: pokeFei,
+  },
+  {
+    path: '/pokeae',
+    name: 'PokeAe',
+    component: pokeAe,
   },
 ];
 
