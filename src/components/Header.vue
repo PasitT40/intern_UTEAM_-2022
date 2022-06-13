@@ -14,12 +14,6 @@
                 src="https://cdn.discordapp.com/attachments/983216589891596318/984307349688819723/pngwing.com_1.png"
               >
               </v-img>
-              <!-- <v-img
-                src="/picture.png"
-                alt=""
-                contain
-                height="100px" width="150px">
-              </v-img> -->
             </router-link>
           </v-col>
           <v-col cols="1" class="tw-px-4 d-flex justify-center align-center 
