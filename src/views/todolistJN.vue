@@ -1,20 +1,23 @@
 <template>
-  <v-container fluid>
+  <v-container fluid class="tw-bg-slate-900">
     <v-row no-gutters>
-
-      <v-col cols="12" class="d-flex justify-center ">
-        <span class="tw-font-[800] tw-text-[50px] tw-text-white">TO DO LIST</span>
+      <v-col cols="12" class="d-flex justify-center">
+        <span class="tw-font-[800] tw-text-[50px] tw-text-white"
+          >TO DO LIST</span
+        >
       </v-col>
 
-       <v-col cols="12" class="d-flex justify-center">
-        <span class="tw-font-[500] tw-text-[25px] tw-text-white">Create a list of tasks :</span>
+      <v-col cols="12" class="d-flex justify-center">
+        <span class="tw-font-[500] tw-text-[25px] tw-text-white"
+          >Create a list of tasks :</span
+        >
       </v-col>
 
       <v-row no-gutters justify="center">
-        <v-col cols="4" class="tw-text-slate-200 ">
+        <v-col cols="4" class="tw-text-slate-200">
           <v-text-field
             v-model="text"
-            color ="success"
+            color="success"
             label="Add a new task"
             variant="underlined"
           ></v-text-field>
@@ -25,10 +28,13 @@
           </v-btn>
         </v-col>
       </v-row>
-      
     </v-row>
     <v-row no-gutters justify="center">
-      <v-col v-for="each in arrayText" cols="7" class="pa-5 ma-2 tw-rounded-lg tw-bg-slate-700"  >
+      <v-col
+        v-for="each in arrayText"
+        cols="7"
+        class="pa-5 ma-2 tw-rounded-lg tw-bg-slate-700"
+      >
         <v-row no-gutters>
           <v-col cols="4">
             <span
@@ -40,13 +46,13 @@
           </v-col>
           <v-col cols="2">
             <v-btn color="green" @click="onDone">
-                <span class="tw-font-[700] tw-text-[20px]">DONE</span>
+              <span class="tw-font-[700] tw-text-[20px]">DONE</span>
             </v-btn>
           </v-col>
 
           <v-col cols="2">
             <v-btn @click="onDelete(each)" color="red">
-                <span class="tw-font-[700] tw-text-[20px]">DELETE</span>
+              <span class="tw-font-[700] tw-text-[20px]">DELETE</span>
             </v-btn>
           </v-col>
         </v-row>
