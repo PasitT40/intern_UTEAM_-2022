@@ -35,7 +35,7 @@
                             </span>
                         </v-col>
                         <v-col cols="2">
-                            <v-btn @click="onDone(item)" color="success">Done</v-btn>
+                            <v-btn @click="onDone" color="success">Done</v-btn>
                         </v-col>
                         <v-col cols="2">
                             <v-btn @click="onDelete(item)" color="red">
