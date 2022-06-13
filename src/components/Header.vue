@@ -18,11 +18,6 @@
               <span>Pokemon</span>
             </router-link>
           </v-col>
-          <v-col cols="1" class="d-flex justify-center align-center
-                                  tw-border-b-2 tw-border-transparent 
-                                  hover:tw-border-b-2 hover:tw-border-rose-200">
-            <router-link to="/todolistJN">To Do Lists</router-link>
-          </v-col>
         </v-row>
       </v-col>
     </v-row>

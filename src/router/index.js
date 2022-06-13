@@ -26,11 +26,6 @@ const routes = [
     component: PokemonWithID,
     props: true,
   },
-  {
-    path: '/todolistbeam',
-    name: 'todolistBeam',
-    component: TodolistBeam,
-  },
 ];
 
 const router = createRouter({
