@@ -14,7 +14,7 @@ import CloneFei from '@/components/CloneFei.vue';
 import CloneJN from '@/components/WebNior.vue';
 import TodolistExample from '@/views/TodolistExample.vue';
 import todolistJN from '@/views/todolistJN.vue';
-import TodolistBeam from '@/components/todolistbeam.vue';
+import TodolistBeam from '@/views/todolistbeam.vue';
 import todolistFei from '@/views/todolistFei.vue';
 
 // root(src)/views/about
@@ -79,6 +79,8 @@ const routes = [
     path: '/todolistbeam',
     name: 'todolistBeam',
     component: TodolistBeam,
+  },
+  {
     path: '/todolistfei',
     name: 'todolistFei',
     component: todolistFei,
