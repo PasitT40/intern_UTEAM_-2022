@@ -1,5 +1,13 @@
 <template>
-  <v-container></v-container>
+  <v-container>
+    <v-row no-gutters>
+      <v-col cols="12">{{ pokemon.name }}</v-col>
+      <v-col cols="12">
+        <v-img :src="pokemon.image"></v-img>
+      </v-col>
+      <v-col cols="12">{{ pokemon.type }}</v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script setup>
