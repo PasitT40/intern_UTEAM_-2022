@@ -15,7 +15,7 @@ import axios from "axios";
 var pokemon = {};
 
 await axios
-  .get("https://pokeapi.co/api/v2/pokemon/1")
+  .get("https://pokeapi.co/api/v2/pokemon/59")
   .then((res) => {
     console.log("res.data = ", res.data);
     pokemon = {

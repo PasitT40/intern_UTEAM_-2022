@@ -1,6 +1,6 @@
 <template>
   <!-- <v-container fluid> -->
-      <v-container fluid class="tw-bg-[url('src/assets/bg_pokemon.png')]">
+      <v-container fluid class="tw-bg-[url('src/assets/bg_pokemon.png')] full-img tw-h-full">
     <!-- <div :style="{'background-image':'url(https://i.pinimg.com/originals/df/4e/8b/df4e8ba28f912bf9cdf9fa0dfc196411.png)'}">
     </div>
     <div :style="{backgroundImage:'url(https://i.pinimg.com/originals/df/4e/8b/df4e8ba28f912bf9cdf9fa0dfc196411.png)'} " >
