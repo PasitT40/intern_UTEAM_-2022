@@ -1,8 +1,8 @@
 <template>
   <v-app>
-    <v-main>
+    <v-main class="tw-bg-slate-900">
       <Header></Header>
-      <router-view class="tw-h-full"/>
+      <router-view />
     </v-main>
   </v-app>
 </template>
