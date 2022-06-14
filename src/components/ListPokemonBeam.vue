@@ -38,6 +38,18 @@
                 </div>
             </router-link>
         </v-col>
+
+        <v-col cols="6" class="tw-ml-9 tw-mt-11">
+          <v-row class="tw-text-cyan-500 tw-text-xl">
+            <span class="tw-mb-3"> Types </span>
+          </v-row>
+          <v-row class="tw-mt-10">
+            <span class="tw-pl-3 tw-capitalize">
+              {{ pokemon.type }}
+            </span>
+          </v-row>
+        </v-col>
+      </v-col>
     </v-row>
   </v-container>
 </template>

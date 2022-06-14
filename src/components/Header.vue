@@ -16,25 +16,54 @@
               </v-img>
             </router-link>
           </v-col>
-          <v-col cols="1" class="tw-px-4 d-flex justify-center align-center 
-                                  tw-border-b-2 tw-border-transparent 
-                                  hover:tw-border-b-2 hover:tw-border-rose-200">
+          <v-col
+            cols="1"
+            class="
+              tw-px-4
+              d-flex
+              justify-center
+              align-center
+              tw-border-b-2 tw-border-transparent
+              hover:tw-border-b-2 hover:tw-border-rose-200
+            "
+          >
             <router-link to="/">Home</router-link>
           </v-col>
-          <v-col cols="1" class="d-flex justify-center align-center
-                                  tw-border-b-2 tw-border-transparent 
-                                  hover:tw-border-b-2 hover:tw-border-rose-200">
+          <v-col
+            cols="1"
+            class="
+              d-flex
+              justify-center
+              align-center
+              tw-border-b-2 tw-border-transparent
+              hover:tw-border-b-2 hover:tw-border-rose-200
+            "
+          >
             <router-link to="/About">About</router-link>
           </v-col>
-          <v-col cols="2" class="d-flex justify-center align-center 
-                                  tw-border-b-2 tw-border-transparent 
-                                  hover:tw-border-b-2 hover:tw-border-rose-200">
+          <v-col
+            cols="2"
+            class="
+              d-flex
+              justify-center
+              align-center
+              tw-border-b-2 tw-border-transparent
+              hover:tw-border-b-2 hover:tw-border-rose-200
+            "
+          >
             <router-link to="/Product">All Product</router-link>
           </v-col>
-          <v-col cols="1" class="d-flex justify-center align-center
-                                  tw-border-b-2 tw-border-transparent 
-                                  hover:tw-border-b-2 hover:tw-border-rose-200">
-            <router-link to="/todolistJN">To Do Lists</router-link>
+          <v-col
+            cols="1"
+            class="
+              d-flex
+              justify-center
+              align-center
+              tw-border-b-2 tw-border-transparent
+              hover:tw-border-b-2 hover:tw-border-rose-200
+            "
+          >
+            <router-link to="/pokeBeam">To Do Lists</router-link>
           </v-col>
         </v-row>
       </v-col>
