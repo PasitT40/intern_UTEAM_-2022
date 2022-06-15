@@ -7,7 +7,7 @@
           <v-row no-gutters>
             <v-col cols="4">
               <v-row no-gutters align="center" class="justify-center mt-5 ">
-                <router-link :to="`/pokefei/${pokemon.id - 1}`">
+                <router-link @click.native="$router.go"  :to="`/pokefei/${pokemon.id - 1}`">
                   <v-btn variant="plain" size="small" color="grey" icon>
                     <v-img :width="20" src="https://cdn-icons-png.flaticon.com/512/860/860790.png">
                     </v-img>

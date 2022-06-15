@@ -20,7 +20,6 @@ import pokeBeam from '@/views/pokeBeam.vue';
 import pokeFei from '@/views/pokeFei.vue';
 import pokeJN from '@/views/pokeJN.vue';
 import pokeAe from '@/views/pokeAe.vue'; 
-import PokemonWithIdBeam from '@/views/pokemonWithIdBeam.vue'
 import PokemonDetailFei from '@/views/PokeDetailFei.vue';
 
 
