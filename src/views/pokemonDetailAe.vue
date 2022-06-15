@@ -1,15 +1,17 @@
 <template>
   <Suspense>
-    <list-pokemon-beam></list-pokemon-beam>
+    <pokemon-with-id-ae :id="id"></pokemon-with-id-ae>
     <template #fallback> Loading... </template>
   </Suspense>
 </template>
 
 <script>
-import ListPokemonBeam from "@/components/ListPokemonBeam.vue";
+import PokemonWithIdAe from "@/components/PokemonWithIdAe.vue";
 export default {
+  props: ["id"],
+
   components: {
-    ListPokemonBeam,
+    PokemonWithIdAe,
   },
 };
 </script>
