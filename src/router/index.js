@@ -20,7 +20,7 @@ import pokeBeam from '@/views/pokeBeam.vue';
 import pokeFei from '@/views/pokeFei.vue';
 import pokeJN from '@/views/pokeJN.vue';
 import pokeAe from '@/views/pokeAe.vue';
-import PokemonWithIdBeam from '@/views/pokemonWithIdBeam.vue'
+import pokemonDetailBeam from '@/views/pokemonDetailBeam.vue';
 
 // root(src)/views/about
 
@@ -112,8 +112,8 @@ const routes = [
   },
   {
     path: '/pokebeam/:id',
-    name: 'PokemonWithIdBeam',
-    component: PokemonWithIdBeam,
+    name: 'pokemonDeatilBeam',
+    component: pokemonDetailBeam,
     props: true,
   },
 ];

@@ -1,18 +1,11 @@
 <template>
-  <!-- <v-container fluid> -->
-      <v-container fluid class="tw-bg-[url('src/assets/bg_pokemon.png')]">
-    <!-- <div :style="{'background-image':'url(https://i.pinimg.com/originals/df/4e/8b/df4e8ba28f912bf9cdf9fa0dfc196411.png)'}">
-    </div>
-    <div :style="{backgroundImage:'url(https://i.pinimg.com/originals/df/4e/8b/df4e8ba28f912bf9cdf9fa0dfc196411.png)'} " >
-    </div>
-    <v-img src="https://i.pinimg.com/originals/df/4e/8b/df4e8ba28f912bf9cdf9fa0dfc196411.png" height="100%"></v-img>
-     -->
+    <v-container fluid class="tw-bg-[url('src/assets/bg_pokemon.png')] full-img tw-h-full">
     <v-row no-gutters>
-        <v-col cols="12" class="d-flex justify-center tw-text-3xl tw-font-semibold tw-capitalize">
-            <span class="tw-text-black">
+        <v-col cols="12" class="d-flex justify-center align-center tw-text-4xl tw-font-semibold tw-capitalize">
+            <span class="tw-text-emerald-900">
                 {{pokemon.name}} 
             </span>
-            <span class="tw-text-gray-500 tw-font-normal tw-pl-4">
+            <span class="tw-text-gray-500 tw-font-normal tw-pl-4 tw-text-3xl">
                 #{{pokemon.id}}
             </span>
         </v-col>
@@ -75,8 +68,6 @@
                     </span>
                 </v-row>
             </v-col>
-            
-
         </v-col>
     </v-row>
   </v-container>
@@ -86,11 +77,12 @@
 import axios from "axios";
 var pokemon = {};
 
-const props = defineProps(['foo'])
+const props = defineProps(['id']);
+console.log(props.id)
 
 
 await axios
-  .get("https://pokeapi.co/api/v2/pokemon/1")
+  .get(`https://pokeapi.co/api/v2/pokemon/${props.id}`)
   .then((res) => {
     console.log("res.data = ", res.data);
     pokemon = {
@@ -113,4 +105,9 @@ console.log(pokemon)
 </script>
 
 <style lang="scss" scoped>
+    .full-img {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 </style>
