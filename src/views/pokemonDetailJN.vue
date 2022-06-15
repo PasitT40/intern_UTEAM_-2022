@@ -1,15 +1,17 @@
 <template>
   <Suspense>
-    <list-pokemon-jn></list-pokemon-jn>
+    <pokemon-with-id-jn :id="id"></pokemon-with-id-jn>
     <template #fallback> Loading... </template>
   </Suspense>
 </template>
 
 <script>
-import ListPokemonJn from "@/components/ListPokemonJn.vue";
+import PokemonWithIdJn from "@/components/PokemonWithIdJn.vue";
 export default {
+    props: ["id"],
+
   components: {
-    ListPokemonJn,
+    PokemonWithIdJn,
   },
 };
 </script>
