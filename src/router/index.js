@@ -116,7 +116,7 @@ const routes = [
   },
   {
     path: '/pokebeam/:id',
-    name: 'pokemonDeatilBeam',
+    name: 'pokemonDetailBeam',
     component: pokemonDetailBeam,
   },
   {
