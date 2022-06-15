@@ -117,11 +117,13 @@ const routes = [
     path: '/pokebeam/:id',
     name: 'pokemonDetailBeam',
     component: pokemonDetailBeam,
+    props: true,
   },
   {
     path: '/pokeae/:id',
     name: 'pokemonDetailAe',
     component: pokemonDetailAe,
+    props: true,
   },
   {
     path: '/pokefei/:id',

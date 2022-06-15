@@ -126,8 +126,9 @@
 
 <script setup>
 import axios from "axios";
-import { onBeforeRouteLeave, onBeforeRouteUpdate } from "vue-router";
-var pokemon = {};
+import { ref } from "vue";
+import { onBeforeRouteUpdate } from "vue-router";
+var pokemon = ref({});
 const props = defineProps(["id"]);
 console.log(props);
 async function callDetail(recId) {
@@ -136,7 +137,7 @@ async function callDetail(recId) {
     .get(`https://pokeapi.co/api/v2/pokemon/${recId ? recId : props.id}`)
     .then((res) => {
       console.log("res.data = ", res.data);
-      pokemon = {
+      pokemon.value = {
         name: res.data.name,
         id: res.data.id,
         ability: res.data.abilities.map((each) => each.ability.name),
