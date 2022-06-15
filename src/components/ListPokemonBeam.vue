@@ -56,6 +56,7 @@
 
 <script setup>
 import axios from "axios";
+var pokemon = {};
 
 // callPokemon = async () => {
 async function callPokemon() {
