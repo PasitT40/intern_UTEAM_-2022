@@ -21,6 +21,8 @@ import pokeFei from '@/views/pokeFei.vue';
 import pokeJN from '@/views/pokeJN.vue';
 import pokeAe from '@/views/pokeAe.vue';
 import pokemonDetailAe from '@/views/pokemonDetailAe.vue';
+import PokemonWithIdBeam from '@/views/pokeBeamWithId.vue';
+import pokemonDetailJN from '@/views/pokemonDetailJN.vue';
 
 // root(src)/views/about
 
@@ -113,13 +115,20 @@ const routes = [
   {
     path: '/pokeae/:id',
     name: 'pokemonDetailAe',
-    component: pokemonDetailAe,
+    path: '/pokebeam/:id',
+  },
+  {
+    name: 'PokemonWithIdBeam',
+    props: true,
+    path: '/pokejn/:id',
+  },
+  {
+    name: 'pokemonDetailJN',
+    component: pokemonDetailJN,
     props: true,
   },
 ];
-
 const router = createRouter({
-  history: createWebHistory(),
   routes,
 });
 
