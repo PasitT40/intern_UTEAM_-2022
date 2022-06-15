@@ -157,8 +157,6 @@ onBeforeRouteUpdate(async (to, from) => {
   console.log(from.params.id);
   if (to.params.id != from.params.id) {
     await callDetail(to.params.id);
-    $route.go();
-    console.log(pokemon, "pokemon");
   }
 });
 await callDetail();

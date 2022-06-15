@@ -102,7 +102,7 @@ async function callPokemon() {
 }
 
 const pokemon = await callPokemon();
-sortPokemon = pokemon.map((each) => {
+const sortPokemon = pokemon.map((each) => {
   return {
     name: each.name,
     image: each.sprites.front_default,
