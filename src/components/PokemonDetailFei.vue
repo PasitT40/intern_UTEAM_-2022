@@ -1,30 +1,53 @@
 <template>
   <v-container
     fluid
-    class="tw-bg-[url('src/assets/bg_pokemon.png')] full-img tw-h-full"
+    class="
+      tw-bg-[url('src/assets/bg_pokemon.png')] 
+      full-img 
+      tw-h-full"
   >
     <v-row
       no-gutters
-      class="tw-border-2 tw-border-zinc-500 tw-rounded-lg tw-bg-white pb-10"
+      class="
+        tw-border-2 
+        tw-border-zinc-500 
+        tw-rounded-lg 
+        tw-bg-white 
+        pb-10"
     >
-      <v-col cols="12" class="tw-rounded-lg">
+      <v-col 
+        cols="12" 
+        class="tw-rounded-lg"
+      >
         <!-- header -->
         <v-col
           cols="12"
           class="
-            tw-bg-red-500 tw-rounded-t-lg tw-font-mono tw-text-3xl tw-capitalize
-          "
+            tw-bg-red-500 
+            tw-rounded-t-lg 
+            tw-font-mono 
+            tw-text-5xl 
+            tw-capitalize
+            py-8"
         >
           <v-row no-gutters>
             <v-col cols="4">
-              <v-row no-gutters align="center" class="justify-center mt-5">
+              <v-row 
+                no-gutters 
+                align="center" 
+                class="justify-center mt-5"
+              >
                 <router-link
                   :to="`/pokefei/${pokemon.id - 1}`"
                   :key="$route.fullPath"
                 >
-                  <v-btn variant="plain" size="small" color="grey" icon>
+                  <v-btn 
+                    variant="plain" 
+                    size="small" 
+                    color="grey"       
+                  >
                     <v-img
-                      :width="20"
+                      :width="50"
                       src="https://cdn-icons-png.flaticon.com/512/860/860790.png"
                     >
                     </v-img>
@@ -33,22 +56,39 @@
               </v-row>
             </v-col>
             <v-col cols="4">
-              <v-row no-gutters class="d-flex justify-center">
+              <v-row 
+                no-gutters 
+                class="d-flex justify-center">
                 {{ pokemon.name }}
               </v-row>
-              <v-row no-gutters class="d-flex justify-center tw-text-zinc-100">
+              <v-row 
+                no-gutters 
+                class="
+                  d-flex 
+                  justify-center 
+                  tw-text-zinc-100
+                  tw-text-4xl"
+              >
                 #{{ pokemon.id }}
               </v-row>
             </v-col>
             <v-col cols="4">
-              <v-row no-gutters align="center" class="justify-center mt-5">
+              <v-row 
+                no-gutters 
+                align="center" 
+                class="justify-center mt-5"
+              >
                 <router-link
                   :to="`/pokefei/${pokemon.id + 1}`"
                   :key="$route.fullPath"
                 >
-                  <v-btn variant="plain" size="small" color="grey" icon>
+                  <v-btn 
+                    variant="plain" 
+                    size="small" 
+                    color="grey" 
+                  >
                     <v-img
-                      :width="20"
+                      :width="50"
                       src="https://cdn-icons-png.flaticon.com/512/130/130884.png"
                     >
                     </v-img>
@@ -59,23 +99,37 @@
           </v-row>
         </v-col>
         <!-- body -->
-        <v-col cols="12" class="d-flex justify-center mt-6 mb-6">
+        <v-col 
+          cols="12" 
+          class="
+            d-flex 
+            justify-center 
+            mt-6 
+            mb-6"
+        >
           <v-row no-gutters class="flex tw-justify-around">
             <v-col
               cols="3"
               class="
-                tw-bg-stone-100 tw-border-2 tw-border-zinc-300 tw-rounded-full
-              "
+                tw-bg-stone-100 
+                tw-border-2 
+                tw-border-zinc-300 
+                tw-rounded-full"
             >
               <v-img :src="pokemon.image"></v-img>
             </v-col>
             <v-col
               cols="7"
               class="
-                tw-bg-stone-100 tw-border-2 tw-border-zinc-300 tw-rounded-lg
+                tw-bg-stone-100 
+                tw-border-2 
+                tw-border-zinc-300 
+                tw-rounded-lg
                 pt-6
                 pb-6
-                tw-font-mono tw-text-3xl tw-capitalize
+                tw-font-mono 
+                tw-text-3xl 
+                tw-capitalize
                 pl-10
                 tw-leading-10
               "
@@ -92,16 +146,24 @@
               </v-row>
 
               <v-row no-gutters class="pt-5 tw-text-zinc-400">abilities</v-row>
-              <v-row no-gutters class="">
-                <v-chip
+              <v-row>
+                <span
                   class="mt-2 ml-2"
-                  size="x-large"
-                  color="gray"
                   v-for="(item, index) in pokemon.ability"
                   v-bind:key="item.id"
                 >
-                  {{ pokemon.ability[index] }}
-                </v-chip>
+                  <router-link :to="`/pokefei/ability/${pokemon.ability[index]}`">
+                    <v-btn
+                    class="mt-2"
+                    flat
+                    rounded="pill"
+                    size="large"
+                    color="grey-lighten-2"
+                    >
+                    {{ pokemon.ability[index] }}
+                    </v-btn>
+                  </router-link>
+                </span>
               </v-row>
 
               <v-row no-gutters class="pt-5 tw-text-zinc-400">type</v-row>
@@ -128,9 +190,11 @@
 import axios from "axios";
 import { ref } from "vue";
 import { onBeforeRouteUpdate } from "vue-router";
+
 var pokemon = ref({});
 const props = defineProps(["id"]);
 console.log(props);
+
 async function callDetail(recId) {
   console.log(recId, "recId");
   await axios

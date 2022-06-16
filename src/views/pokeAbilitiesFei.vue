@@ -1,16 +1,17 @@
-
 <template>
   <Suspense>
-    <list-pokemon-fei></list-pokemon-fei>
+    <AbilitiesFei :name="name"></AbilitiesFei>
     <template #fallback> Loading... </template>
   </Suspense>
 </template>
 
 <script>
-import ListPokemonFei from "@/components/ListPokemonFei.vue";
+import AbilitiesFei from "@/components/AbilitiesFei.vue";
 export default {
+  props: ["name"],
+
   components: {
-    ListPokemonFei,
+    AbilitiesFei,
   },
 };
 </script>

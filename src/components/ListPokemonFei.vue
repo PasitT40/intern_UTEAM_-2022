@@ -1,22 +1,52 @@
 <template>
   <v-container 
     fluid 
-    class="tw-bg-gradient-to-t tw-from-cyan-500 tw-to-blue-500] tw-h-full"
+    class="
+      tw-bg-gradient-to-t 
+      tw-from-cyan-200 
+      tw-to-blue-200 
+      tw-h-full"
   >
     <v-row>
-      <v-col cols="4" v-for="item in sortPokemon" v-bind:key="item.id">
-        <v-card class="mx-auto" max-width="400">
-          <v-img class="align-end text-white" height="200" :src="item.image">
+      <v-col 
+        cols="4" 
+        v-for="item in sortPokemon" 
+        v-bind:key="item.id"
+      >
+        <v-card 
+          class="mx-auto tw-rounded-lg " 
+          max-width="344"
+        >
+          <v-img 
+            class="align-end text-white" 
+            height="200" 
+            :src="item.image"
+          >
           </v-img>
           <v-divider class="mx-4 my-4"></v-divider>
-          <v-card-title class="tw-font-mono text-h5  align-center justify-center">
+          <v-card-title 
+            class="
+              tw-font-mono 
+              text-h5  
+              align-center 
+              justify-center"
+          >
             {{ item.name }}
           </v-card-title>
-          <v-card-subtitle class="align-center justify-center text-overline">
+          <v-card-subtitle 
+            class="
+              align-center 
+              justify-center 
+              text-overline"
+          >
             #{{ item.id }}
           </v-card-subtitle>
           <router-link :to="`/pokefei/${item.id}`">
-            <v-card-actions class="align-center justify-center">
+            <v-card-actions 
+              class="
+                align-center 
+                justify-center"
+            >
               <v-btn color="red mb-4">
                 more info
               </v-btn>
