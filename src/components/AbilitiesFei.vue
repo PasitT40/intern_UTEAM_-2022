@@ -67,32 +67,33 @@
                                     class="pa-4"
                                     center-active 
                                     show-arrows
-                                    
                                 >
                                     <v-slide-group-item 
                                         v-for="item in sortPokemon" 
                                         :key="item"
                                         v-slot="{ isSelected, toggle }"
                                     >
-                                        <v-card 
-                                            :color="isSelected ? 'grey' : 'grey-lighten-2'" 
-                                            class="ma-4 rounded-card"
-                                            height="120" 
-                                            width="120" 
-                                            @click="toggle"
-                                        >
-                                            <div 
-                                                class="d-flex fill-height align-center justify-center">
-                                                <v-scale-transition>
-                                                    <v-img 
-                                                        align="center" 
-                                                        height="100" 
-                                                        :src="item.image"
-                                                    >
-                                                    </v-img>
-                                                </v-scale-transition>
-                                            </div>
-                                        </v-card>
+                                        <router-link :to="`/pokefei/${item.id}`">
+                                            <v-card 
+                                                :color="isSelected ? 'grey' : 'grey-lighten-2'" 
+                                                class="ma-4 rounded-card"
+                                                height="120" 
+                                                width="120" 
+                                                @click="toggle"
+                                            >
+                                                <div 
+                                                    class="d-flex fill-height align-center justify-center">
+                                                    <v-scale-transition>
+                                                        <v-img 
+                                                            align="center" 
+                                                            height="100" 
+                                                            :src="item.image"
+                                                        >
+                                                        </v-img>
+                                                    </v-scale-transition>
+                                                </div>
+                                            </v-card>
+                                        </router-link>
                                     </v-slide-group-item>
                                 </v-slide-group>
                             </v-sheet>
@@ -170,4 +171,5 @@
     border-radius: 50px;
     border: 1px solid rgb(68, 68, 68);
 }
+    
 </style>
