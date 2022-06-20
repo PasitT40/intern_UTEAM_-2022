@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid class="pa-0 mb-5">
+  <v-container fluid class="pa-0">
     <v-row
       no-gutters
       class="tw-h-14 tw-bg-gradient-to-r tw-from-purple-500 tw-to-pink-500"
