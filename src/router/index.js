@@ -26,6 +26,7 @@ import pokemonDetailAe from '@/views/pokemonDetailAe.vue';
 import pokemonDetailJN from '@/views/pokemonDetailJN.vue';
 import pokeAbilitiesFei from '@/views/pokeAbilitiesFei.vue';
 import pokemonAbilityBeam from '@/views/pokemonAbilityBeam.vue';
+import pokeAbilityJn from '@/views/pokeAbilityJn.vue';
 
 // root(src)/views/about
 
@@ -149,6 +150,12 @@ const routes = [
     path: '/pokebeam/ability/:name',
     name: 'pokemonAbilityBeam',
     component: pokemonAbilityBeam,
+    props: true,
+  },
+  {
+    path: '/pokejn/ability/:name',
+    name: 'pokeAbilityJn',
+    component: pokeAbilityJn,
     props: true,
   },
 ];

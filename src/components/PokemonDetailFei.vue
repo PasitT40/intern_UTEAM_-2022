@@ -13,7 +13,7 @@
         tw-border-zinc-500 
         tw-rounded-lg 
         tw-bg-white 
-        pb-10"
+        pb-10 mx-10 mt-6"
     >
       <v-col 
         cols="12" 

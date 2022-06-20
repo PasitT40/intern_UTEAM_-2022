@@ -1,18 +1,20 @@
 <template>
   <Suspense>
-    <list-pokemon-jn></list-pokemon-jn>
+    <ability-jn :name="name"></ability-jn>
     <template #fallback> Loading... </template>
   </Suspense>
 </template>
 
 <script>
-import ListPokemonJn from "@/components/ListPokemonJn.vue";
+import AbilityJn from "@/components/AbilityJn.vue";
 export default {
+  props: ["name"],
+
   components: {
-    ListPokemonJn,
+    AbilityJn,
   },
 };
 </script>
-
 <style lang="scss" scoped>
+
 </style>
