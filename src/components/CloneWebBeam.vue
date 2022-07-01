@@ -25,7 +25,6 @@
                         <div>
                             <img src="../assets/search_uni.png" width="18"/>
                         </div>
-                        
                     </form>
                 </v-col>
                 <v-col class="d-flex justify-end align-center" cols="2">

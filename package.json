@@ -11,6 +11,7 @@
     "axios": "^0.27.2",
     "pinia": "^2.0.14",
     "roboto-fontface": "*",
+    "v-video-embed": "^1.0.8",
     "vue": "^3.2.36",
     "vue-axios": "^3.4.1",
     "vue-router": "^4.0.13",
